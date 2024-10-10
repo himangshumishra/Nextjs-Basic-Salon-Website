@@ -1,23 +1,26 @@
 import React from "react";
 import Image from "next/image";
+import t1 from "../../public/images/team1.png";
+import t2 from "../../public/images/team2.png";
+import t3 from "../../public/images/team3.png";
 
 const teamMembers = [
   {
     name: "DAVID",
     role: "Hair Cut Specialist",
-    image: "https://placehold.co/300x400?text=David",
+    image: t1,
     alt: "David, Hair Cut Specialist",
   },
   {
     name: "PAUL",
     role: "Beard & Trimming",
-    image: "https://placehold.co/300x400?text=Paul",
+    image: t2,
     alt: "Paul, Beard & Trimming Specialist",
   },
   {
     name: "CHARLIE",
     role: "Hair Color Specialist",
-    image: "https://placehold.co/300x400?text=Charlie",
+    image: t3,
     alt: "Charlie, Hair Color Specialist",
   },
 ];
@@ -40,7 +43,7 @@ const Team: React.FC = () => {
               alt={member.alt}
               width={300}
               height={400}
-              className="w-full h-auto"
+              className="w-full "
             />
             <div className="bg-yellow-600 text-white py-2">
               <h3 className="text-xl font-bold">{member.name}</h3>
