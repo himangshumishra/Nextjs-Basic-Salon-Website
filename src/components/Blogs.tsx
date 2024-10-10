@@ -1,5 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import b1 from "../../public/images/b1.png";
+import b2 from "../../public/images/b2.png";
+import b3 from "../../public/images/b3.png";
 
 const Blogs: React.FC = () => {
   return (
@@ -16,7 +19,7 @@ const Blogs: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
           <Image
-            src="https://placehold.co/600x400"
+            src={b1}
             alt="Barber cutting hair in a barbershop"
             width={600}
             height={400}
@@ -35,7 +38,7 @@ const Blogs: React.FC = () => {
         </div>
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
           <Image
-            src="https://placehold.co/600x400"
+            src={b2}
             alt="Man getting a beard trim in a barbershop"
             width={600}
             height={400}
@@ -54,7 +57,7 @@ const Blogs: React.FC = () => {
         </div>
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
           <Image
-            src="https://placehold.co/600x400"
+            src={b3}
             alt="Man getting a shave in a barbershop"
             width={600}
             height={400}

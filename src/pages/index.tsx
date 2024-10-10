@@ -11,6 +11,7 @@ import Appointment from '../components/Appointment';
 import Footer from '@/components/Footer';
 import Clients from '@/components/Clients';
 import Work from '@/components/Work';
+import Blogs from '@/components/Blogs';
 
 
 export default function Home() {
@@ -25,7 +26,7 @@ export default function Home() {
       <Testimonials />
       <Pricing />
       <Appointment />
-      <Team/>
+      <Blogs/>
       <Clients/>
       <Work/>
       <Footer/>
