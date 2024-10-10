@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const teamMembers = [
   {
@@ -34,7 +35,13 @@ const Team: React.FC = () => {
       <div className="flex justify-center mt-10 space-x-8">
         {teamMembers.map((member, index) => (
           <div key={index} className="w-64">
-            <img src={member.image} alt={member.alt} className="w-full h-auto" />
+            <Image
+              src={member.image}
+              alt={member.alt}
+              width={300}
+              height={400}
+              className="w-full h-auto"
+            />
             <div className="bg-yellow-600 text-white py-2">
               <h3 className="text-xl font-bold">{member.name}</h3>
               <p className="text-sm">{member.role}</p>

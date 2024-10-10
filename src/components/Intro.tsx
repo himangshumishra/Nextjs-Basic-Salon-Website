@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Intro: React.FC = () => {
   return (
@@ -10,15 +11,17 @@ const Intro: React.FC = () => {
         </h1>
         <h3 className="text-2xl font-bold mt-2 text-black">Since 1990</h3>
         <div className="my-4">
-          <img
+          <Image
             src="/images/barber.png"
             alt="Barber Icon"
-            className="mx-auto w-24 h-24"
+            width={96}
+            height={96}
+            className="mx-auto"
           />
         </div>
 
         <p className="text-gray-700 max-w-xl mx-auto">
-          Barber is a person whose occupation is mainly to cut dress groom style
+          Barber is a person whose occupation is mainly to cut, dress, groom, style,
           and shave men's and boys' hair. A barber's place of work is known as a
           "barbershop" or a "barber's". Barbershops are also places of social
           interaction and public discourse. In some instances, barbershops are
@@ -29,10 +32,12 @@ const Intro: React.FC = () => {
         </button>
       </div>
       <div className="relative mt-8 lg:mt-0 lg:w-1/2 p-8 lg:p-16 flex justify-center">
-        <img
+        <Image
           src="/images/into-group.png"
           alt="Barber group"
-          className="rounded-lg shadow-lg w-2/3 h-auto"
+          width={400}
+          height={300}
+          className="rounded-lg shadow-lg"
         />
       </div>
     </div>

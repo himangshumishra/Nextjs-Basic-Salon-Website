@@ -7,12 +7,11 @@ import w4 from '../../public/images/w4.png';
 import w5 from '../../public/images/w5.png';
 
 const images = [
-  { src: w1, alt: "Child getting a haircut" },
-  { src: w2, alt: "Person getting a haircut" },
-  { src: w3, alt: "Person getting a haircut" },
-  { src: w4, alt: "Person with a beard getting a haircut" },
-  { src: w5, alt: "Person with a beard getting a haircut" },
-  { src: w5, alt: "Person getting a haircut" },
+  { src: w1, alt: 'Child getting a haircut' },
+  { src: w2, alt: 'Person getting a haircut' },
+  { src: w3, alt: 'Person getting a haircut' },
+  { src: w4, alt: 'Person with a beard getting a haircut' },
+  { src: w5, alt: 'Person with a beard getting a haircut' },
 ];
 
 const Work = () => {
@@ -24,14 +23,14 @@ const Work = () => {
         <i className="fas fa-mustache text-yellow-500 mx-1"></i>
         <div className="w-12"></div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 px-28 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 px-28">
         {images.map((image, index) => (
           <div key={index} className="relative">
             <Image
               src={image.src}
               alt={image.alt}
-              width={250} 
-              height={250} 
+              width={250}
+              height={250}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>

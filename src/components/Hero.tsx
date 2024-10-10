@@ -1,18 +1,14 @@
 import Image from 'next/image';
 
-interface HeroProps {
-  // Add any props you need here
-}
-
-const Hero: React.FC<HeroProps> = () => {
+const Hero: React.FC = () => {
   return (
     <section className="h-screen relative overflow-hidden">
       <div className="absolute inset-0">
         <Image
           src="/images/heroImg.png"
           alt="Hero Image"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: 'cover' }}
           className="w-full h-full"
         />
       </div>

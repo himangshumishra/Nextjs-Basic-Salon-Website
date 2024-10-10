@@ -1,11 +1,12 @@
 import React from "react";
+import Image from "next/image";
 
 const Blogs: React.FC = () => {
   return (
     <div className="container mx-auto p-8 bg-white min-w-full">
       <div className="text-center mb-8">
         <h2 className="text-yellow-600 text-lg font-bold">NEWS FROM BLOG</h2>
-        <h1 className="text-4xl font-bold text-gray-800">What's On Our Mind</h1>
+        <h1 className="text-4xl font-bold text-gray-800">What&apos;s On Our Mind</h1>
         <div className="flex justify-center items-center mt-2">
           <div className="w-16 h-1 bg-yellow-600"></div>
           <i className="fas fa-mustache text-yellow-600 mx-2"></i>
@@ -14,9 +15,11 @@ const Blogs: React.FC = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
-          <img
+          <Image
             src="https://placehold.co/600x400"
             alt="Barber cutting hair in a barbershop"
+            width={600}
+            height={400}
             className="w-full h-48 object-cover"
           />
           <div className="p-4">
@@ -31,9 +34,11 @@ const Blogs: React.FC = () => {
           </div>
         </div>
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
-          <img
+          <Image
             src="https://placehold.co/600x400"
             alt="Man getting a beard trim in a barbershop"
+            width={600}
+            height={400}
             className="w-full h-48 object-cover"
           />
           <div className="p-4">
@@ -48,9 +53,11 @@ const Blogs: React.FC = () => {
           </div>
         </div>
         <div className="bg-white shadow-md rounded-lg overflow-hidden">
-          <img
+          <Image
             src="https://placehold.co/600x400"
             alt="Man getting a shave in a barbershop"
+            width={600}
+            height={400}
             className="w-full h-48 object-cover"
           />
           <div className="p-4">
