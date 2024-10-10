@@ -5,6 +5,7 @@ import w2 from '../../public/images/w2.png';
 import w3 from '../../public/images/w3.png';
 import w4 from '../../public/images/w4.png';
 import w5 from '../../public/images/w5.png';
+import w6 from '../../public/images/w6.png';
 
 const images = [
   { src: w1, alt: 'Child getting a haircut' },
@@ -12,6 +13,7 @@ const images = [
   { src: w3, alt: 'Person getting a haircut' },
   { src: w4, alt: 'Person with a beard getting a haircut' },
   { src: w5, alt: 'Person with a beard getting a haircut' },
+  { src: w6, alt: 'Person with a beard getting a haircut' },
 ];
 
 const Work = () => {
