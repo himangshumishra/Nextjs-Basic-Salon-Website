@@ -8,6 +8,9 @@ import Team from '../components/Team';
 import Testimonials from '../components/Testimonials';
 import Pricing from '../components/Pricing';
 import Appointment from '../components/Appointment';
+import Footer from '@/components/Footer';
+import Clients from '@/components/Clients';
+import Work from '@/components/Work';
 
 
 export default function Home() {
@@ -22,6 +25,10 @@ export default function Home() {
       <Testimonials />
       <Pricing />
       <Appointment />
+      <Team/>
+      <Clients/>
+      <Work/>
+      <Footer/>
     </div>
   );
 }
